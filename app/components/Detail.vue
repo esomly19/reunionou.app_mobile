@@ -19,7 +19,7 @@
       <ContentView height="85%" width="100%">
         <Mapbox
           accessToken="pk.eyJ1IjoiZXNvbWx5IiwiYSI6ImNrYnczMnV2ZDBjMWcyeHRib2pjanFiaXUifQ.M7npNPLrm84MHsSRWKSmQw"
-          mapStyle="traffic_night"
+          mapStyle="traffic_day"
           hideCompass="true"
           zoomLevel="12"
           showUserLocation="false"

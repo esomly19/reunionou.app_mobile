@@ -27,7 +27,7 @@
     </ActionBar>
     <ListView for="commentaire in commentaires">
       <v-template>
-        <Label>{{commentaire.nom}} {{commentaire.commentaire}}</Label>
+        <Label>{{commentaire.nom}} dit {{commentaire.commentaire}}</Label>
       </v-template>
     </ListView>
   </Page>
@@ -79,7 +79,7 @@ export default {
         )
         .then(res => {
           console.log("Données" + res.data);
-          this.commentaires = res.data;
+          this.commentaires = res.data.comments;
         })
         .catch(err => {
           console.log("CASSE");
